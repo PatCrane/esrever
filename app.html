@@ -51,12 +51,12 @@
          <!-- === Main Section === -->
         <main class="flex-shrink-0">
             <div class="container mt-5">
-                <div class="row">
+                <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col">
                         <h1>
                             esreveR: A Coding Project
                         </h1>
-                        <h4 class="lead">
+                        <h4 class="lead pb-3">
                             A Javascript coding exercise using arrays. An application that displays a string in reverse.
                         </h4>
                     </div>
@@ -116,5 +116,8 @@
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
         <script src="js/site.js"></script>
+        <script>
+            document.getElementById("btnSubmit").addEventListener("click", getValue);
+        </script>
     </body>
 </html>  
