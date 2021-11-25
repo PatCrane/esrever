@@ -8,12 +8,20 @@ function getValue(){
     
     let revString = reverseString(userString);
     
-    displayString(revString);
+    if(userString == "") {
+        
+        alert("Please enter a string");
+    
+    } else {
+        
+        displayString(revString);
+    }
+    
 }
 
 //Reverse the string
 //Logic function
-function reverseAString(userString){
+function reverseString(userString){
 
     let revString = [];
     
