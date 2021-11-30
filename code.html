@@ -23,7 +23,7 @@
         <!-- === Nav Section === -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/img/logo-icon.png" class="" alt="Pat Crane Logo Icon" height="40"> esreveR</a>
+                <a class="navbar-brand" href="/">&lt&lt&lt esreveR</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -112,9 +112,13 @@
                         </pre>
                     </div>
                     <div class="col-lg-4">
-                        <p>The Code is structured in one function</p>
-                        <h5>Hello World()</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam maxime saepe tempora quisquam accusamus! Reprehenderit, placeat. Earum ab, nemo corrupti iure incidunt quis placeat perspiciatis sequi accusamus ipsam sint quam!</p>
+                        <p>The Code is structured in three functions.</p>
+                        <h5>getValue()</h5>
+                        <p>On line 5, we hook onto the alert using getElementById() and add the Bootstrap class "invisible" so that the alert is not displayed by default. Line 7 sets the value of the user input to "userString" so we can reference it later. Line 9 saves the result of our "reverseString()" function into the variable "revString". Lines 11 through 18 performs some simple validation to make sure the user does not submit an empty string.</p>
+                        <h5>reverseString()</h5>
+                        <p>This function accepts a string as a parameter. We then set the variable "revString" to an empty array on line 26 which we will referenced later in the code. On lines 30 through 34 we iterate through our string array using a for-loop, decrementing by one starting from the last index of the string array until the index is 0. For each iteration, our "revString" variable is updated which gives us our string in reverse. The final output of the function returns the "revString" variable. </p>
+                        <h5>displayString()</h5>
+                        <p>This function takes a string (our reversed string) as a parameter. On line 45 we hook into our HTML tag with the id of "msg" and use a template literal to display the reversed string passed into the function. On line 48 we hook into our HTML tag with the id of "alert" to remove the "invisible" Bootstrap class which will make the alert visible in the browser.</p>
                     </div>
                 </div>
 
